@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 public class DataStructures {
  //=======================================================Equals=======================================================
     @Test
-    public void test_for_check_equal_when_data_are_same() throws Exception {
+    public void TestForCheckEqualWhenDataAreSame() throws Exception {
         Person praju1 = new Person("Praju", 18);
         Person praju2 = new Person("Praju", 18);
 
@@ -22,7 +22,7 @@ public class DataStructures {
     }
 
     @Test
-    public void test_for_check_equal_when_data_are_not_same() throws Exception {
+    public void TestForCheckEqualWhenDataAreNotSame() throws Exception {
         Person praju1 = new Person("Praju", 18);
         Person praju2 = new Person("Prajuk", 18);
 
@@ -31,7 +31,7 @@ public class DataStructures {
     }
 
     @Test
-    public void test_for_check_equal_when_reference_is_same() throws Exception {
+    public void TestForCheckEqualWhenReferenceIsSame() throws Exception {
         Person praju1 = new Person("Praju", 18);
         Person praju2 = praju1;
 
@@ -40,7 +40,7 @@ public class DataStructures {
     }
 
     @Test
-    public void test_for_check_equal_when_one_is_null() throws Exception {
+    public void TestForCheckEqualWhenOneIsNull() throws Exception {
         Person praju1 = new Person("Praju", 18);
         Person praju2 = null;
 
@@ -48,10 +48,10 @@ public class DataStructures {
         assertEquals(false, praju1 == praju2);
 
     }
-    //worng implementation
+    //worng implementation of Equals.
 
     @Test
-    public void test_for_check_equal_when_data_are_same_wrong_impementation() throws Exception {
+    public void TestForCheckEqualWhenDataAreSameWrongImpementation() throws Exception {
         PersonWorngImpementation praju1 = new PersonWorngImpementation("Praju", 18);
         PersonWorngImpementation praju2 = new PersonWorngImpementation("Prajakta", 18);
 
@@ -61,7 +61,7 @@ public class DataStructures {
 
     //======================================================HashCode============================================================
     @Test
-    public void test_for_check_hashcode_() throws Exception {
+    public void TestForCheckHashcode_() throws Exception {
         Person praju1 = new Person("Praju", 18);
 
         int hash = praju1.hashCode();
@@ -73,7 +73,7 @@ public class DataStructures {
     //worng impementation
 
     @Test
-    public void hashworng() throws Exception {
+    public void TestForHashCodeWorngImpementation() throws Exception {
         PersonWorngImpementation praju1 = new PersonWorngImpementation("Praju", 18);
 
         int hash = praju1.hashCode();
@@ -86,7 +86,7 @@ public class DataStructures {
     //===================================================HashMap============================================================
 
     @Test
-    public void test_for_HashMap_to_check_allow_different_keys_to_inserted() throws Exception {
+    public void TestForHashMapToCheckAllowDifferentKeysToInserted() throws Exception {
         Person praju1 = new Person("praju", 18);
         Person praju2 = new Person("prajakta", 18);
         HashMap<Integer, Person> people = new HashMap<Integer, Person>();
@@ -98,7 +98,7 @@ public class DataStructures {
     }
 
     @Test
-    public void test_for_check_HashMap_overeide_data_when_keys_are_same() throws Exception {
+    public void TestForCheckHashMapOvereideDataWhenKeysAreSame() throws Exception {
         Person praju1 = new Person("praju", 18);
         HashMap<Integer, Person> people = new HashMap<Integer, Person>();
 
@@ -110,7 +110,7 @@ public class DataStructures {
 
     //wrong implementation
     @Test
-    public void test_for_check_HashMap_allow_same_data_to_inserted() throws Exception {
+    public void TestForCheckHashMapAllowSameDataToInserted() throws Exception {
         PersonWorngImpementation praju1 = new PersonWorngImpementation("praju", 19);
         HashMap<Integer, Person> people = new HashMap<Integer, Person>();
 
@@ -122,7 +122,7 @@ public class DataStructures {
 
     //==================================================Set===============================================================
     @Test
-    public void test_for_check_different_data_inserting_allow() throws Exception {
+    public void TestForCheckDifferentDataInsertingAllow() throws Exception {
         Person praju1 = new Person("praju", 18);
         Person praju2 = new Person("prajakta", 18);
         Set<Person> people = new HashSet<Person>();
@@ -134,7 +134,7 @@ public class DataStructures {
     }
 
     @Test
-    public void test_for_not_allow_to_inserting_when_data_is_same() throws Exception {
+    public void TestForNotAllowToInsertingWhenDataIsSame() throws Exception {
         Person praju1 = new Person("Praju", 18);
         Set<Person> people = new HashSet<Person>();
 
@@ -147,7 +147,7 @@ public class DataStructures {
     //worng implementation
 
     @Test
-    public void test_for_cheak_allow_inserting_data_is_same() throws Exception {
+    public void TestForCheakAllowInsertingDataIsSame() throws Exception {
         PersonWorngImpementation praju1 = new PersonWorngImpementation("Praju", 18);
         Set<PersonWorngImpementation> people = new HashSet<PersonWorngImpementation>();
 
@@ -159,7 +159,7 @@ public class DataStructures {
 
     //=====================================================Arraylist===========================================
     @Test
-    public void test_for_check_allow_insertion_of_same_data() throws Exception {
+    public void TestForCheckAllowInsertionOfSameData() throws Exception {
         Person praju1 = new Person("Praju", 18);
         Person praju2 = new Person("Praju", 18);
         ArrayList<Person> people = new ArrayList<Person>();
@@ -173,7 +173,7 @@ public class DataStructures {
     //worng implementation
 
     @Test
-    public void test_for_check_does_not_allow_insertion_of_same_data() throws Exception {
+    public void TestForCheckDoesNotAllowInsertionOfSameData() throws Exception {
         PersonWorngImpementation praju1 = new PersonWorngImpementation("Praju", 18);
         PersonWorngImpementation praju2 = new PersonWorngImpementation("Prajakta", 18);
         ArrayList<Person> people = new ArrayList<Person>();

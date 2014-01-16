@@ -21,67 +21,74 @@ class MyClass {
 }
 
 public class PersonTest {
-    Person swamiji = new Person("Swamiji", 3);
-    Person kunal = new Person("Kunal", 50);
-    Person digvijay = new Person("Digvijay", 35);
+
+    Person Prajakta = new Person("Prajakta", 3);
+    Person Pranali = new Person("Pranali", 50);
+    Person Arya = new Person("Arya", 35);
 
     @Test
-    public void test_for_compare_personName_length_using_equal() throws Exception {
+    public void TestForComparePersonNameLengthUsingEqual() throws Exception {
 
-        List<Person> people = MyClass.addPeopleToList(digvijay, kunal, swamiji);
+        List<Person> people = MyClass.addPeopleToList(Arya, Pranali, Prajakta);
+
         Collections.sort(people, new Comparator<Person>() {
             @Override
             public int compare(Person p1, Person p2) {
                 return p1.getName().length() - p2.getName().length();
             }
         });
-        assertEquals(true, kunal.equals(people.get(0)));
-        assertEquals(true, swamiji.equals(people.get(1)));
-        assertEquals(true, digvijay.equals(people.get(2)));
 
+        assertEquals(true, Pranali.equals(people.get(0)));
+        assertEquals(true, Prajakta.equals(people.get(1)));
+        assertEquals(true, Arya.equals(people.get(2)));
     }
 
     @Test
-    public void test_for_compare_name_using_equals() throws Exception {
-        List<Person> people = MyClass.addPeopleToList(digvijay, kunal, swamiji);
+    public void TestForCompareNameUsingEquals() throws Exception {
+        List<Person> people = MyClass.addPeopleToList(Arya, Pranali, Prajakta);
+
         Collections.sort(people, new Comparator<Person>() {
             @Override
             public int compare(Person p1, Person p2) {
                 return p1.getName().compareTo(p2.getName());
             }
         });
-        assertEquals(true, digvijay.equals(people.get(0)));
-        assertEquals(true, kunal.equals(people.get(1)));
-        assertEquals(true, swamiji.equals(people.get(2)));
+
+        assertEquals(true, Arya.equals(people.get(0)));
+        assertEquals(true, Pranali.equals(people.get(1)));
+        assertEquals(true, Prajakta.equals(people.get(2)));
     }
 
 
     @Test
-    public void test_for_compare_age_using_equal() throws Exception {
-        List<Person> people = MyClass.addPeopleToList(digvijay, kunal, swamiji);
+    public void TestForCompareAgeUsingEqual() throws Exception {
+        List<Person> people = MyClass.addPeopleToList(Arya, Pranali, Prajakta);
+
         Collections.sort(people, new Comparator<Person>() {
             @Override
             public int compare(Person p1, Person p2) {
                 return (p1.getAge()) - (p2.getAge());
             }
         });
-        assertEquals(true, swamiji.equals(people.get(0)));
-        assertEquals(true, digvijay.equals(people.get(1)));
-        assertEquals(true, kunal.equals(people.get(2)));
+
+        assertEquals(true, Prajakta.equals(people.get(0)));
+        assertEquals(true, Arya.equals(people.get(1)));
+        assertEquals(true, Pranali.equals(people.get(2)));
     }
 
     @Test
-    public void test_for_compare_name_in_reverse_order() throws Exception {
-        List<Person> people = MyClass.addPeopleToList(digvijay, kunal, swamiji);
+    public void TestForCompareNameInReverseOrder() throws Exception {
+        List<Person> people = MyClass.addPeopleToList(Arya, Pranali, Prajakta);
+
         Collections.sort(people, new Comparator<Person>() {
             @Override
             public int compare(Person p1, Person p2) {
                 return p2.getName().compareTo(p1.getName());
-
             }
         });
-        assertEquals(true, swamiji.equals(people.get(0)));
-        assertEquals(true, kunal.equals(people.get(1)));
-        assertEquals(true, digvijay.equals(people.get(2)));
+
+        assertEquals(true, Prajakta.equals(people.get(0)));
+        assertEquals(true, Pranali.equals(people.get(1)));
+        assertEquals(true, Arya.equals(people.get(2)));
     }
 }
