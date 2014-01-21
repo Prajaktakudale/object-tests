@@ -23,6 +23,6 @@ Person has name and age. It has tested the Person's equals method for correct an
 This implements comparators over Person class for comparing name,name length,age,reverse name using comparator.
 
 ##Test cases for ArrayList
-    Purpose : To understand how ArrayList works and throw exceptions and how                 to test that in test case.
+    Purpose : To understand how ArrayList works and throw exceptions and how to test that in test case.
     
 It tests ArrayList with different generics.object-tools
