@@ -20,10 +20,6 @@
     </path>
     <taskdef classpathref="cobertura.classpath" resource="tasks.properties"/>
 
-    <target name="clean">
-        <delete dir="build"/>
-    </target>
-
     <target name="compile" depends="init">
         <javac srcdir="src" destdir="build/classes/src" debug="yes" includeAntRuntime="false">
             <classpath refid="cobertura.classpath"/>

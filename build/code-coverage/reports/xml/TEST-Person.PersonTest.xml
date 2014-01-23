@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Inprajaktv" name="Person.PersonTest" skipped="0" tests="4" time="0.119" timestamp="2014-01-23T03:51:25">
+<testsuite errors="0" failures="0" hostname="Inprajaktv" name="Person.PersonTest" skipped="0" tests="4" time="0.112" timestamp="2014-01-23T04:13:52">
   <properties>
     <property name="ant.project.invoked-targets" value="coverage" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
@@ -49,7 +49,7 @@
     <property name="user.name" value="prajaktv" />
     <property name="java.vm.specification.version" value="1.7" />
     <property name="sun.arch.data.model" value="64" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner Person.PersonTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,d:\Projects\object-tests\build\code-coverage\reports\xml\TEST-Person.PersonTest.xml crashfile=d:\Projects\object-tests\junitvmwatcher5578851806149079789.properties propsfile=d:\Projects\object-tests\junit2833949457314995832.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner Person.PersonTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,d:\Projects\object-tests\build\code-coverage\reports\xml\TEST-Person.PersonTest.xml crashfile=d:\Projects\object-tests\junitvmwatcher1700627780894399509.properties propsfile=d:\Projects\object-tests\junit328559974742183826.properties" />
     <property name="java.home" value="c:\Program Files\Java\jdk1.7.0_11\jre" />
     <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="user.language" value="en" />
@@ -68,10 +68,10 @@
     <property name="sun.desktop" value="windows" />
     <property name="sun.cpu.isalist" value="amd64" />
   </properties>
-  <testcase classname="Person.PersonTest" name="TestForComparePersonNameLengthUsingEqual" time="0.016" />
+  <testcase classname="Person.PersonTest" name="TestForCompareAgeUsingEqual" time="0.015" />
+  <testcase classname="Person.PersonTest" name="TestForComparePersonNameLengthUsingEqual" time="0.001" />
   <testcase classname="Person.PersonTest" name="TestForCompareNameUsingEquals" time="0.0" />
   <testcase classname="Person.PersonTest" name="TestForCompareNameInReverseOrder" time="0.0" />
-  <testcase classname="Person.PersonTest" name="TestForCompareAgeUsingEqual" time="0.0" />
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
